@@ -1,4 +1,4 @@
-# Urico's Pokedex (AngularJA Developer Assignment)
+# Urico's Pokedex (AngularJS Developer Assignment)
 
 This application is intended for Technical Assesment only, based on this requirements
 [https://github.com/shlinka/Pokedex-assignment](https://github.com/shlinka/Pokedex-assignment)
