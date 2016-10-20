@@ -1,0 +1,59 @@
+@-ms-viewport {
+	width: device-width;
+}
+
+@viewport {
+	width: device-width;
+}
+
+/**
+ * 14.1 - >= 710px
+ */
+@media screen and (min-width: 44.375em) {
+    .wrapper {
+        #filter-widget {
+            input[type="search"] {
+                width: 50%;
+                float: left;
+                margin-bottom: 0px;
+            }
+            ul {
+                float: right;
+            }
+        }
+    }
+}
+
+/**
+ * 14.2 - >= 783px
+ */
+@media screen and (min-width: 48.9375em) {
+
+}
+
+/**
+ * 14.3 - >= 910px
+ */
+@media screen and (min-width: 56.875em) {
+    .wrapper {
+        max-width: 60%;
+    }
+}
+
+/**
+ * 14.4 - >= 985px
+ */
+
+@media screen and (min-width: 61.5625em) {
+    
+}
+
+/**
+ * 14.5 - >= 1200px
+ */
+
+@media screen and (min-width: 75em) {
+    .wrapper {
+        max-width: 700px;
+    }
+}

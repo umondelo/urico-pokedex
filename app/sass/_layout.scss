@@ -1,0 +1,199 @@
+body {
+    background: $white url(images/bg.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: right;
+}
+
+.wrapper {
+    margin: $margin;
+    background: rgba(255,255,255,0.825);
+    @include box-shadow(0 1px 7px rgba(35,35,35,0.125));
+}
+
+/*** Search & Sorting Widget ***/
+#filter-widget {
+    padding: $padding;
+    @include clearfix();
+    background: $blue;
+    &.affix {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        margin-left: -20px;
+        z-index: 1000;
+    }
+    input[type="search"] {
+        display: block;
+        border: none;
+        width: 96%;
+        margin-bottom: 20px;
+        @include box-shadow(0 1px 3px rgba(35,35,35,0.125));
+        @include border-radius(3px);
+    }
+    ul {
+        list-style: none;
+        margin: 6px 0 0;
+        padding: 0;
+        display: block;
+        li {
+            display: inline-block;
+            color: $white;
+            a {
+                padding: 5px 10px;
+                border: 1px solid $link;
+                background: $link;
+                color: $white;
+                text-decoration: none;
+                @include border-radius(3px);
+                @include box-shadow(0 1px 3px rgba(35,35,35,0.125));
+                &:active, &:focus {
+                    @include box-shadow(inset 0 1px 7px rgba(35,35,35,0.425));
+                }
+                &:hover, &:focus {
+                    background: $link-hover;
+                    border-color: $link-hover;
+                }
+            }
+        }
+    }
+}
+
+/*** Pokemon List ***/
+#pokemon-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        display: block;
+        //padding: 10px;
+        border-bottom: 1px solid $grey;
+        &:hover {
+            background: $yellow;
+            h2 {
+                color: $link;
+            }
+            h5 {color: $white;}
+        }
+        header {
+            display: block;
+            @include clearfix();
+            cursor: pointer;
+            padding: 10px;
+            img {
+                float: left;
+                margin-right: 14px;
+                max-width: 80px;
+            }
+            hgroup {
+                float: left;
+                h2 {margin-bottom: 0;}
+                h5 {margin: 0;}
+            }
+            &:hover {
+                img, h2 {
+                    @extend .animated;
+                    @extend .pulse;
+                }
+            }
+        }
+        article {
+            background: $blue;
+            color: $white;
+            aside {
+                text-align: center;
+                padding: 10px;
+                &:nth-child(even) {
+                    background: $blue-dark;
+                    padding-top: 16px;
+                    &:hover {
+                        img.spr-img {
+                            @extend .animated;
+                            @extend .wobble;
+                        }
+                    }
+                }
+                img.full-img {
+                    max-width: 100%;
+                    display: block;
+                    padding:  10px;
+                    margin: 0 auto;
+                    &:hover {
+                        @extend .animated;
+                        @extend .tada;
+                    }
+                }
+                img.spr-img {
+                    background: $white;
+                    @include border-radius(50%);
+                    margin-right: 4px;
+                    @include box-shadow(0 1px 3px rgba(35,35,35,0.325));
+                    &:hover {
+                        @extend .animated;
+                        @extend .wobble;
+                    }
+                }
+                strong {
+                    font-size: 140%;
+                    text-shadow: 0 1px 2px rgba(35,35,35,0.325);
+                }
+                .pokeTypes {
+                    margin-bottom: 10px;
+                    strong {font-size: 100%; color: $white;}
+                    span {
+                        display: inline-block;
+                        padding: 5px 10px;
+                        background: $blue-dark;
+                        @include border-radius(25px);
+                        color: $yellow;
+                    }
+                }
+                ol {
+                    list-style: none;
+                    margin: 0;
+                    padding: 5px 10px 10px;
+                    li {
+                        border: none;
+                        @include clearfix();
+                        @include center-elements();
+                        margin: 3px 0;
+                        &:hover {background: none;}
+                        label {
+                            width: 20%;
+                            float: left;
+                            text-align: left;
+                        }
+                        div {
+                           width: 68%;
+                            height: 14px;
+                            float: left;
+                            background: $grey;
+                            overflow: hidden;
+                            @include border-radius(20px);
+                            border: 1px solid #1763bc;
+                            @include box-shadow(0 1px 0 rgba(255,255,255,0.125));
+                            span {
+                                background: $yellow;
+                                height: 14px;
+                                display: block;
+                                @include box-shadow(inset 0 -4px 4px rgba(35,35,35,0.325));
+                            }
+                        }
+                        em { 
+                            width: 12%;
+                            float: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.loader-wrapper {
+    padding: $padding;
+    text-align: center;
+}
+
+/** Used for search/ sort filter to affix to top **/
+.affix-top {top: 50px;}
+.affix-bottom {bottom: 0;}

@@ -1,0 +1,1 @@
+"use strict";describe("Filters",function(){beforeEach(module("pokedexApp")),describe("removeSpecialChars",function(){var e;beforeEach(inject(function(c){e=c("removeSpecialChars",{})})),it("should remove special characters and white space on string",inject(function(c){expect(e("Uri!co")).toBe("Urico")}))})});

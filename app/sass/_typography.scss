@@ -1,0 +1,25 @@
+body {
+    font-family: $regular-font;
+}
+
+h1, h2 {
+    font-family: $header-font;
+}
+
+h1 {
+    font-weight: normal;
+    padding-left: 20px;
+    font-size: 225%;
+    color: $link;
+    line-height: normal;
+}
+h2 {
+    
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+h5 {
+    font-weight: normal;
+    color: $grey-dark;
+}

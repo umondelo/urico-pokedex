@@ -1,0 +1,13 @@
+.ng-animate {
+    @extend .animated;
+    @extend .fadeIn;
+}
+
+.ng-move {
+    @extend .animated;
+    @extend .fadeIn;
+}
+
+.ng-hide {
+    animation: 0.3s fadeOut;
+}

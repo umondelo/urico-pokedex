@@ -1,0 +1,1 @@
+!function(){"use strict";function t(){return{restrict:"E",templateUrl:"/directives/search-sort.html"}}function e(){return{restrict:"E",templateUrl:"/directives/skill-description.html"}}angular.module("pokedexApp.directive").directive("searchSort",t).directive("skillDescription",e),t.$inject=["$http"],e.$inject=["$http"]}();
