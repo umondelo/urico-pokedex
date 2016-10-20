@@ -11,6 +11,8 @@ This app shows a list of pokemons (fetch from different json files) which can be
 When clicked on each pokemon, the container expand to show pokemon details.
 Also, the app support a responsive view on all browsers.
 
+DEMO: [http://pokedex.uricomondelo.com/](http://pokedex.uricomondelo.com/)
+
 ## Getting Started
 To get you started you can simply clone this repository and install the dependencies:
 
