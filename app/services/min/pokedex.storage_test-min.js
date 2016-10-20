@@ -1,1 +1,0 @@
-"use strict";it("should demonstrate using when (200 status)",inject(function(e){var t={};$httpBackend.when("GET","/data/pokedex.json").respond(200,{ename:"Bulbasaur"}),$httpBackend.flush(),expect(t.valid).toBe(!0),expect(t.response).toEqual({ename:"Bulbasaur"})}));

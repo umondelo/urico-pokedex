@@ -23,30 +23,35 @@
   
     <h1>Urico's Pokedex</h1>
     <section class="wrapper">
+        
         <div ng-view></div>
+        
     </section>
 
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
+  <!-- Dependensies-->
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-jquery/dist/angular-jquery.min.js"></script>
     <script src="bower_components/angular-bootstrap-affix/dist/angular-bootstrap-affix.js"></script>
     <script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+    
+    <!--- Main App Module --->
     <script src="app.js"></script>
     
+    <!--- Services/ Factory --->
     <script src="services/service.module.js"></script>
     <script src="services/pokedex.storage.js"></script>
     
+    <!--- Filter --->
     <script src="filter/filter.module.js"></script> 
     <script src="filter/app.filter.js"></script> 
     
+    <!--- Directive --->
     <script src="directives/directive.module.js"></script>
     <script src="directives/app.directives.js"></script>
     
-    
+    <!--- Controller --->
     <script src="pokemonlist/pokemonlist.module.js"></script>
     <script src="pokemonlist/pokemonlist.controller.js"></script> 
 

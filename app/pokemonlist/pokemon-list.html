@@ -13,6 +13,7 @@
         </header>
         <article ng-show="details[$index]">
             <aside>
+                <!--- FULL IMAGE OF POKEMON & POKEMON TYPES --->
                 <img ng-src="/images/img/{{pokemon.id + pokemon.ename | removeSpecialChars}}.png" class="full-img">
                 <div ng-repeat="pokemonType in pokemonTypes" ng-if="pokemon.type[0] === pokemonType.cname" class="pokeTypes">
                     <span><strong>{{pokemonType.ename}}</strong> type</span>
@@ -21,6 +22,7 @@
                 </div>
             </aside>
             <aside>
+                <!--- BELOW DISPLAYS POKEMON DETAILS --->
                 <img ng-src="/images/spr/{{pokemon.id + 'MS' | removeSpecialChars}}.png" class="spr-img"> <strong>STATS</strong>
                 <ol>
                     <li>

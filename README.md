@@ -1,11 +1,10 @@
 # Urico's Pokedex (AngularJA Developer Assignment)
 
 This application is intended for Technical Assesment only based on this requirements
-[https://github.com/shlinka/Pokedex-assignment(https://github.com/shlinka/Pokedex-assignment)]
+[https://github.com/shlinka/Pokedex-assignment](https://github.com/shlinka/Pokedex-assignment)
 
 I use Angular-seed to quickly bootstrap my angular assessment and dev environment for this
 project.
-
 
 ## Getting Started
 To get you started you can simply clone this repository and install the dependencies:
@@ -23,7 +22,7 @@ You can get them from [http://nodejs.org/](http://nodejs.org/).
 Clone the urico-pokedex repository using [git][git]:
 
 ```
-git https://github.com/umondelo/urico-pokedex.git
+git clone https://github.com/umondelo/urico-pokedex.git
 cd urico-pokedex
 ```
 
@@ -59,17 +58,24 @@ Now browse to the app at `http://localhost:8000/index.html`.
 ```
 app/                    --> all of the source files for the application
   app.css               --> default stylesheet
-  view1/                --> the view1 view template and logic
-    view1.html            --> the partial template
-    view1.js              --> the controller logic
-    view1_test.js         --> tests of the controller
-  view2/                --> the view2 view template and logic
-    view2.html            --> the partial template
-    view2.js              --> the controller logic
-    view2_test.js         --> tests of the controller
+  directives/                --> contains all directives
+    searh-sort.html          --> search and sorting directive
+    derective.module.js      --> directive module
+    skill-description.html   --> Pokedex skill description
+  filter/               --> 
+    filter.module.js         --> filter module
+    app.filter.js            --> Filter for removing special chars & whitespace
+    app.filter_test.js       --> Tried testing
+  pokemonlist/          --> 
+    pokemon-list.html          --> initial page/ pokemon listing
+    pokemonlist.module.js      --> pokemonlist module
+    pokemonlist.controller.js  --> contains: json data binding to scope | dynamic sorting | toggle function for Pokemon details    
+  SASS                  --> Contains all scss files
+  Services              --> Contains all scss files
+    service.module.js          --> service module
+    pokedex.storage.js         --> Get $http of all json files
   app.js                --> main application module
   index.html            --> app layout file (the main html template file of the app)
-  index-async.html      --> just like index.html, but loads js files asynchronously
 karma.conf.js         --> config file for running unit tests with Karma
 e2e-tests/            --> end-to-end tests
   protractor-conf.js    --> Protractor config file
@@ -80,4 +86,4 @@ e2e-tests/            --> end-to-end tests
 
 Urico Mondelo
 
-[site]: http://uricomondelo.com
+[http://uricomondelo.com](http://uricomondelo.com)
