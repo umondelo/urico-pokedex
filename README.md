@@ -1,10 +1,15 @@
 # Urico's Pokedex (AngularJA Developer Assignment)
 
-This application is intended for Technical Assesment only based on this requirements
+This application is intended for Technical Assesment only, based on this requirements
 [https://github.com/shlinka/Pokedex-assignment](https://github.com/shlinka/Pokedex-assignment)
 
 I use Angular-seed to quickly bootstrap my angular assessment and dev environment for this
 project.
+
+### Application Description
+This app shows a list of pokemons (fetch from different json files) which can be filtered. 
+When clicked on each pokemon, the container expand to show pokemon details.
+Also, the app support a responsive view on all browsers.
 
 ## Getting Started
 To get you started you can simply clone this repository and install the dependencies:
@@ -85,5 +90,4 @@ e2e-tests/            --> end-to-end tests
 ## Contact
 
 Urico Mondelo
-
 [http://uricomondelo.com](http://uricomondelo.com)
